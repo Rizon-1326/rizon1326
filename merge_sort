@@ -1,6 +1,5 @@
 #include<bits/stdc++.h>
 using namespace std;
-
 void Merge(int a[], int lb, int mid, int ub)
 {
 	int i=lb, j=mid+1,k=lb;
