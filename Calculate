@@ -1,0 +1,29 @@
+package lav_2;
+
+public class Calculate {
+	
+		public static void main(String[] args) {
+			Rational firstnum=new Rational();
+			Rational secondnum=new Rational();
+			Rational result=new Rational();
+			firstnum.numerator=1;
+			firstnum.denominator=2;
+			secondnum.numerator=1;
+			secondnum.denominator=3;
+			
+			result=result.add(firstnum,secondnum);
+			System.out.println("Summation is : "+(double)result.numerator/result.denominator);
+			
+			result=result.sub(firstnum,secondnum);
+			System.out.println("Substraction is : "+(double)result.numerator/result.denominator);
+			
+			result=result.multiply(firstnum,secondnum);
+			System.out.println("Multiplication is : "+(double)result.numerator/result.denominator);
+			
+			result=result.divide(firstnum,secondnum);
+			System.out.println("Division is : "+(double)result.numerator/result.denominator);
+			
+		}
+	}
+
+
