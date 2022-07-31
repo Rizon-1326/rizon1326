@@ -20,23 +20,21 @@ void Merge(int a[], int lb, int mid, int ub)
             k++;
         }
     }
-    if(i>mid)
-    {
+    
       while(j<=ub)
       {
           b[k]=a[j];
           j++; k++;
       }
-    }
-    else
-    {
+    
+   
         while(i<=mid)
         {
             b[k]=a[i];
             i++;
             k++;
         }
-    }
+    
     for(k=lb;k<=ub;k++)
     {
         a[k]=b[k];
@@ -65,5 +63,3 @@ int main()
         cout<<a[i]<<" ";
 
 }
-
-
