@@ -53,7 +53,6 @@ void mergeSort(int a[], int lb, int ub)
 		Merge(a, lb, mid, ub);
 	}
 }
-
 int main()
 {
     int n; cin>>n;
