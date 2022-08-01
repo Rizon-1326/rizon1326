@@ -7,6 +7,7 @@ struct node
         int info;
         struct node *next;
 };
+
 struct node *start=NULL;
 int main(){
     int x;
@@ -21,28 +22,27 @@ int main(){
     display();
 }
 void create(int x )
-{
         struct node *temp,*ptr;
         temp=(struct node *)malloc(sizeof(struct node));
         if(temp==NULL)
         {
-                printf("nOut of Memory Space:n");
+                printf("nOut of Memory Space:n");  //aikhane dekhlo value ace kina. mane temp = NULL holei to kaj shes
                 exit(0);
         }
         //freopen("list.txt","r",stdin);
         //printf("nEnter the data value for the node:t");
         temp->info=x;
-        temp->next=NULL;
+        temp->next=NULL;  //main hote asa x er man assign hocce temp e
         if(start==NULL)
         {
-                start=temp;
+                start=temp;  //temp er sokol kicu mane value r address of next element eikhane rakha hocce
         }
         else
         {
-                ptr=start;
+                ptr=start;  //jeheto start ekhon NULL na tai ptr pointer use kora hocce. er ete ptr = start rakha hoece
                 while(ptr->next!=NULL)
                 {
-                        ptr=ptr->next;
+                        ptr=ptr->next;  
                 }
                 ptr->next=temp;
         }
