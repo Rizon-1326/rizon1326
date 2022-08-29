@@ -30,7 +30,7 @@ int tree_traversal(struct node* root)
 		else{
 			if(!isEmpty(s_temp)){
 				temp = pop(&s_temp);
-				printf("%d",temp->data);
+				printf("%d->",temp->data);
 				temp = temp->right;
 			}
 			else
