@@ -24,7 +24,7 @@ int tree_traversal(struct node* root)
 	while(flag)
 	{
 		if(temp){
-			printf("%d",temp->data);
+			printf("%d->",temp->data);
             push(&s_temp,temp);
 			temp = temp->left;
 		}
