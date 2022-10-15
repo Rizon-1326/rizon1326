@@ -21,11 +21,11 @@ int main()
         {
             st[i].marks=5.00;
         }
-        else if(st[i].class>90.00&&st[i].class<=95.00)
+        else if(st[i].class>=85.00&&st[i].class<90.00)
         {
             st[i].marks=4.50;
         }
-        else if(st[i].class>=80.00&&st[i].class<90.00)
+        else if(st[i].class>=80.00&&st[i].class<85.00)
         {
             st[i].marks=4.00;
         }
